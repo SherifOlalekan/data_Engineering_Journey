@@ -8,16 +8,16 @@ terraform {
 }
 
 provider "google" {
-  credentials = "./keys/credk.json"
-  project     = "my-de-journey"
-  region      = "africa-south1-a"
+  credentials = file(var.credentials)
+  project     = var.project
+  region      = var.region
 }
 
 
 
 resource "google_storage_bucket" "my-de-journey-bucket" {
-  name          = "olalekan-de2753-bucket"
-  location      = "africa-south1"
+  name          = var.gcs_bucket_name
+  location      = var.location
   force_destroy = true
 
 
@@ -29,4 +29,9 @@ resource "google_storage_bucket" "my-de-journey-bucket" {
       type = "AbortIncompleteMultipartUpload"
     }
   }
+}
+
+resource "google_bigquery_dataset" "terra_demo_dataset" {
+  dataset_id = var.bq_dataset_name
+  location   = var.location
 }
