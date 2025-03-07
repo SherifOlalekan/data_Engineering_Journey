@@ -1,10 +1,5 @@
-Welcome to your new dbt project!
+![image](https://github.com/user-attachments/assets/8835086d-ae1d-4e64-89dc-faaa5c76f22f)
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
 
 
 ### Resources:
