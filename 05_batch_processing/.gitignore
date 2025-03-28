@@ -4,6 +4,7 @@ homework/yellow_tripdata_2024-10.parquet
 homework/lookup_zones/
 *.ipynb_checkpoints
 *.parquet
+*.csv
 *.ipynb_checkpoints
 code/data/
 code/lib/
