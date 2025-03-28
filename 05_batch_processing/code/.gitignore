@@ -1,0 +1,7 @@
+*.parquet
+*.ipynb_checkpoints
+data/
+lib/
+tmp/
+zones/
+taxi_zone_lookup.csv

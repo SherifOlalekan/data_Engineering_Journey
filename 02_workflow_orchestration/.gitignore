@@ -60,3 +60,4 @@ core/src/main/resources/gradle.properties
 
 *.json
 credk.json
+keys/
